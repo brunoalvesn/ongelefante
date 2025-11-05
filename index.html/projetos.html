@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos elefante</title>
+
+  <style>
+    /* ====== ESTILO GERAL ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f8ff;
+      color: #333;
+    }
+
+    /* ====== CABEÇALHO ====== */
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 55px;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== CONTEÚDO ====== */
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #1e88e5;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    /* ====== PROJETOS ====== */
+    section {
+      background: #f7faff;
+      border-left: 5px solid #1e88e5;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #1e88e5;
+      margin-bottom: 10px;
+    }
+
+    section ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    section ul li {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .btn-detalhes {
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      margin-top: 12px;
+      transition: background 0.3s;
+    }
+
+    .btn-detalhes:hover {
+      background-color: #1565c0;
+    }
+
+    /* ====== RODAPÉ ====== */
+    footer {
+      background-color: #1e88e5;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top: 3px solid #1565c0;
+    }
+
+    /* ====== RESPONSIVO ====== */
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+
+      main {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/images/elefante-africano.jpg" alt="Logo da ONG Exemplo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="projetos.html" class="ativo">Projetos</a></li>
+        <li><a href="cadastro.html">Participe (Cadastro)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Projetos da ONG ELEFANTE DA CRUZEIRO 💙</h1>
+    <p>Conheça os principais projetos que realizamos para transformar vidas e apoiar nossa comunidade.</p>
+
+    <section>
+      <h2>🌱 Projeto Esperança Verde</h2>
+      <p>O projeto tem como objetivo reflorestar áreas degradadas e promover a conscientização ambiental nas escolas da região.</p>
+      <ul>
+        <li>🌿 Plantio de mudas nativas</li>
+        <li>📚 Oficinas de educação ambiental</li>
+        <li>🤝 Parcerias com escolas e empresas locais</li>
+      </ul>
+      <button class="btn-detalhes" data-projeto="verde">Ver detalhes</button>
+    </section>
+
+    <section>
+      <h2>🍽️ Projeto Alimenta Vida</h2>
+      <p>Distribuímos refeições e cestas básicas para famílias em situação de vulnerabilidade social.</p>
+      <ul>
+        <li>🥗 Mais de 2.000 refeições distribuídas por mês</li>
+        <li>🚚 Parcerias com mercados e restaurantes</li>
+        <li>💖 Voluntariado ativo em toda a cidade</li>
+      </ul>
+      <button class="btn-detalhes" data-projeto="alimenta">Ver detalhes</button>
+    </section>
+
+    <section>
+      <h2>📚 Projeto Futuro Brilhante</h2>
+      <p>Oferecemos reforço escolar gratuito e oficinas de tecnologia para jovens de baixa renda.</p>
+      <ul>
+        <li>💻 Cursos de informática e lógica de programação</li>
+        <li>🧮 Apoio escolar e mentoria</li>
+        <li>🏫 Parcerias com escolas públicas</li>
+      </ul>
+      <button class="btn-detalhes" data-projeto="futuro">Ver detalhes</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | ONG Elefante da cruzeiro | Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Script interativo para mostrar alertas com detalhes dos projetos
+    document.querySelectorAll(".btn-detalhes").forEach(botao => {
+      botao.addEventListener("click", () => {
+        const projeto = botao.dataset.projeto;
+        let mensagem = "";
+
+        switch (projeto) {
+          case "verde":
+            mensagem = "🌱 Projeto Esperança Verde:\nReflorestamento e conscientização ambiental nas escolas!";
+            break;
+          case "alimenta":
+            mensagem = "🍽️ Projeto Alimenta Vida:\nDistribuição de refeições e cestas básicas a famílias carentes.";
+            break;
+          case "futuro":
+            mensagem = "📚 Projeto Futuro Brilhante:\nOficinas de tecnologia e reforço escolar gratuito!";
+            break;
+        }
+
+        alert(mensagem);
+      });
+    });
+  </script>
+</body>
+</html>
